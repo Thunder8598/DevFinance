@@ -1,0 +1,27 @@
+.valor {
+    width: calc(33% - 40px);
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+
+    @media(max-width:900px){
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    &.total{
+        background-color: #11c137;
+        color: white;
+    }
+
+    div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    div:last-child {
+        font-size: 29px;
+    }
+}

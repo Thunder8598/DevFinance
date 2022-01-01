@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #02500f 222px,#f5f2f0 0%);
+    font-family: -webkit-pictograph;
+
+    @media(max-width:900px){
+        background: linear-gradient(180deg, #02500f 360px,#f5f2f0 0%);
+    }
+
+    /* Firefox */
+    * {
+        scrollbar-width: auto;
+        scrollbar-color: #878787 #ffffff;
+    }
+
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: #ffffff;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #878787;
+        border-radius: 10px;
+        border: 3px solid #ffffff;
+    }
+
+    #root {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: calc(100% - 40px);
+        min-height: calc(100vh - 40px);
+
+        @media (max-width: 900px) {
+            height: auto;
+        }
+    }
+}

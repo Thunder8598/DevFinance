@@ -1,0 +1,80 @@
+nav {
+    align-self: center;
+    margin-bottom: 95px;
+
+    @media(max-width:900px){
+        margin-bottom: 10px;
+    }
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+
+    .valores {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 50px;
+
+        @media (max-width: 900px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    .transacoes {
+        > button {
+            margin-bottom: 20px;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            color: #02500f;
+        }
+
+        table {
+            width: 100%;
+
+            thead {
+                width: 100%;
+
+                th {
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                }
+
+                tr {
+                    display: grid;
+                    grid-template-columns: 50% 20% 20% 10%;
+                    width: 100%;
+                    background-color: white;
+                    border-radius: 5px;
+
+                    @media (max-width: 413px) {
+                        display: flex;
+                        justify-content: center;
+
+                        th {
+                            width: 32%;
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                max-height: 280px;
+                overflow-y: scroll;
+                display: block;
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 20px;
+}

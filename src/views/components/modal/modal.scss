@@ -1,0 +1,67 @@
+.modal-transacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        background-color: rgb(245, 242, 240);
+
+        width: 40%;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+
+        padding: 20px;
+
+        input {
+            height: 30px;
+            margin-bottom: 10px;
+            border: none;
+        }
+
+        .form-buttons {
+            display: flex;
+            justify-content: space-between;
+
+            button {
+                height: 40px;
+                width: calc(50% - 8px);
+
+                &.salvar {
+                    color: #0a7421;
+                    border: solid 0.5px #0a7421;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: white;
+                        background-color: #0a7421;
+                    }
+                }
+
+                &.cancelar {
+                    color: #e83f5b;
+                    border: solid 0.5px #e83f5b;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: white;
+                        background-color: #e83f5b;
+                    }
+                }
+            }
+        }
+    }
+}
